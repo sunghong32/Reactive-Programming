@@ -19,6 +19,8 @@
 		65DD9B0326A66D3700FD6D73 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9B0226A66D3700FD6D73 /* Coordinator.swift */; };
 		65DD9B0526A66D9A00FD6D73 /* CompositionRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9B0426A66D9A00FD6D73 /* CompositionRoot.swift */; };
 		65DD9B0726A6751100FD6D73 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9B0626A6751100FD6D73 /* MainCoordinator.swift */; };
+		65DD9B0926A68AAF00FD6D73 /* StockRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9B0826A68AAF00FD6D73 /* StockRepository.swift */; };
+		65DD9B0B26A68AD800FD6D73 /* StockRepositoryImplement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9B0A26A68AD800FD6D73 /* StockRepositoryImplement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		65DD9B0226A66D3700FD6D73 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		65DD9B0426A66D9A00FD6D73 /* CompositionRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionRoot.swift; sourceTree = "<group>"; };
 		65DD9B0626A6751100FD6D73 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		65DD9B0826A68AAF00FD6D73 /* StockRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRepository.swift; sourceTree = "<group>"; };
+		65DD9B0A26A68AD800FD6D73 /* StockRepositoryImplement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRepositoryImplement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,8 @@
 		65DD9AF826A668CC00FD6D73 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				65DD9B0826A68AAF00FD6D73 /* StockRepository.swift */,
+				65DD9B0A26A68AD800FD6D73 /* StockRepositoryImplement.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -223,8 +229,10 @@
 				65DD9AFB26A6690900FD6D73 /* BaseViewController.swift in Sources */,
 				65DD9AE626A6680100FD6D73 /* StockTutorial.xcdatamodeld in Sources */,
 				65DD9B0726A6751100FD6D73 /* MainCoordinator.swift in Sources */,
+				65DD9B0926A68AAF00FD6D73 /* StockRepository.swift in Sources */,
 				65DD9B0126A66A2000FD6D73 /* StockListView.swift in Sources */,
 				65DD9AFF26A669C800FD6D73 /* BaseView.swift in Sources */,
+				65DD9B0B26A68AD800FD6D73 /* StockRepositoryImplement.swift in Sources */,
 				65DD9ADE26A6680100FD6D73 /* SceneDelegate.swift in Sources */,
 				65DD9B0526A66D9A00FD6D73 /* CompositionRoot.swift in Sources */,
 				65DD9AFD26A6697F00FD6D73 /* StockListController.swift in Sources */,
