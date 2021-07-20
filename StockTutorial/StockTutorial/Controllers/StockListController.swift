@@ -33,6 +33,14 @@ class StockListController: BaseViewController, FactoryModule {
         bind()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        enableScrollWhenKeyboardAppeared(scrollView: selfView.tableView)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        removeListeners()
+    }
+
     override func configureUI() {
         view.addSubview(selfView)
         selfView.translatesAutoresizingMaskIntoConstraints = false
@@ -41,8 +49,8 @@ class StockListController: BaseViewController, FactoryModule {
         selfView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         selfView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
 
-        selfView.searchViewController.delegate = self
-        selfView.searchViewController.searchResultsUpdater = self
+        selfView.tableView.delegate = self
+        selfView.tableView.dataSource = self
 
         navigationItem.searchController = selfView.searchViewController
     }
@@ -60,24 +68,13 @@ class StockListController: BaseViewController, FactoryModule {
             print("message: \(message)")
         }.store(in: &subscriber)
 
-        viewModel.$stocks.sink { stocks in
-            print("stocks: \(stocks)")
+        viewModel.$stocks.sink { [unowned self] _ in
+            self.selfView.tableView.reloadData()
         }.store(in: &subscriber)
 
         viewModel.$loading.sink { [unowned self] loading in
             self.selfView.loadingView.isHidden = !loading
-            print("loading: \(loading)")
         }.store(in: &subscriber)
-
-    }
-}
-
-extension StockListController: UISearchControllerDelegate {
-
-}
-
-extension StockListController: UISearchResultsUpdating {
-    func updateSearchResults(for searchController: UISearchController) {
 
     }
 }

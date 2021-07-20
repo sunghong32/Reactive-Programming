@@ -25,6 +25,9 @@
 		65DD9B0F26A695AC00FD6D73 /* StockUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9B0E26A695AC00FD6D73 /* StockUseCase.swift */; };
 		65DD9B1126A6992800FD6D73 /* StockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9B1026A6992800FD6D73 /* StockListViewModel.swift */; };
 		65DD9B1326A6B73800FD6D73 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9B1226A6B73800FD6D73 /* LoadingView.swift */; };
+		65DD9B1526A6BA6B00FD6D73 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9B1426A6BA6B00FD6D73 /* Font.swift */; };
+		65DD9B1726A6BB3100FD6D73 /* StockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9B1626A6BB3100FD6D73 /* StockCell.swift */; };
+		65DD9B1926A6BE2F00FD6D73 /* StockList+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9B1826A6BE2F00FD6D73 /* StockList+TableView.swift */; };
 		833BABECABA735231CD5E68B /* Pods_StockTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1099E1C91B06E853C87B3DB2 /* Pods_StockTutorial.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +54,9 @@
 		65DD9B0E26A695AC00FD6D73 /* StockUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockUseCase.swift; sourceTree = "<group>"; };
 		65DD9B1026A6992800FD6D73 /* StockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModel.swift; sourceTree = "<group>"; };
 		65DD9B1226A6B73800FD6D73 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		65DD9B1426A6BA6B00FD6D73 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		65DD9B1626A6BB3100FD6D73 /* StockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockCell.swift; sourceTree = "<group>"; };
+		65DD9B1826A6BE2F00FD6D73 /* StockList+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StockList+TableView.swift"; sourceTree = "<group>"; };
 		70B708DB434B43A8D13ED11E /* Pods-StockTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockTutorial.release.xcconfig"; path = "Target Support Files/Pods-StockTutorial/Pods-StockTutorial.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,8 +96,8 @@
 				65DD9AF926A668D600FD6D73 /* Domains */,
 				65DD9AF826A668CC00FD6D73 /* Repositories */,
 				65DD9AF726A668C600FD6D73 /* Models */,
-				65DD9AF626A668BA00FD6D73 /* Components */,
 				65DD9AF526A668B400FD6D73 /* Views */,
+				65DD9AF626A668BA00FD6D73 /* Components */,
 				65DD9AF426A668AC00FD6D73 /* Controllers */,
 				65DD9AF326A668A100FD6D73 /* Coordinators */,
 				65DD9AF226A6689A00FD6D73 /* DependencyInjections */,
@@ -127,6 +133,8 @@
 			children = (
 				65DD9AFA26A6690900FD6D73 /* BaseViewController.swift */,
 				65DD9AFC26A6697F00FD6D73 /* StockListController.swift */,
+				65DD9B1826A6BE2F00FD6D73 /* StockList+TableView.swift */,
+				65DD9B1026A6992800FD6D73 /* StockListViewModel.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -136,6 +144,8 @@
 			children = (
 				65DD9AFE26A669C800FD6D73 /* BaseView.swift */,
 				65DD9B0026A66A2000FD6D73 /* StockListView.swift */,
+				65DD9B1226A6B73800FD6D73 /* LoadingView.swift */,
+				65DD9B1626A6BB3100FD6D73 /* StockCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -143,7 +153,7 @@
 		65DD9AF626A668BA00FD6D73 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				65DD9B1226A6B73800FD6D73 /* LoadingView.swift */,
+				65DD9B1426A6BA6B00FD6D73 /* Font.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -152,7 +162,6 @@
 			isa = PBXGroup;
 			children = (
 				65DD9B0C26A68BE700FD6D73 /* Stock.swift */,
-				65DD9B1026A6992800FD6D73 /* StockListViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -316,7 +325,10 @@
 				65DD9B0126A66A2000FD6D73 /* StockListView.swift in Sources */,
 				65DD9B0F26A695AC00FD6D73 /* StockUseCase.swift in Sources */,
 				65DD9AFF26A669C800FD6D73 /* BaseView.swift in Sources */,
+				65DD9B1526A6BA6B00FD6D73 /* Font.swift in Sources */,
 				65DD9B0B26A68AD800FD6D73 /* StockRepositoryImplement.swift in Sources */,
+				65DD9B1726A6BB3100FD6D73 /* StockCell.swift in Sources */,
+				65DD9B1926A6BE2F00FD6D73 /* StockList+TableView.swift in Sources */,
 				65DD9ADE26A6680100FD6D73 /* SceneDelegate.swift in Sources */,
 				65DD9B0526A66D9A00FD6D73 /* CompositionRoot.swift in Sources */,
 				65DD9AFD26A6697F00FD6D73 /* StockListController.swift in Sources */,
