@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,7 @@
 		65DD9B0D26A68BE700FD6D73 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9B0C26A68BE700FD6D73 /* Stock.swift */; };
 		65DD9B0F26A695AC00FD6D73 /* StockUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9B0E26A695AC00FD6D73 /* StockUseCase.swift */; };
 		65DD9B1126A6992800FD6D73 /* StockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9B1026A6992800FD6D73 /* StockListViewModel.swift */; };
+		65DD9B1326A6B73800FD6D73 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9B1226A6B73800FD6D73 /* LoadingView.swift */; };
 		833BABECABA735231CD5E68B /* Pods_StockTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1099E1C91B06E853C87B3DB2 /* Pods_StockTutorial.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		65DD9B0C26A68BE700FD6D73 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		65DD9B0E26A695AC00FD6D73 /* StockUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockUseCase.swift; sourceTree = "<group>"; };
 		65DD9B1026A6992800FD6D73 /* StockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModel.swift; sourceTree = "<group>"; };
+		65DD9B1226A6B73800FD6D73 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		70B708DB434B43A8D13ED11E /* Pods-StockTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockTutorial.release.xcconfig"; path = "Target Support Files/Pods-StockTutorial/Pods-StockTutorial.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +143,7 @@
 		65DD9AF626A668BA00FD6D73 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				65DD9B1226A6B73800FD6D73 /* LoadingView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -185,7 +188,6 @@
 				3E086152ECD75ABFB0DD033F /* Pods-StockTutorial.debug.xcconfig */,
 				70B708DB434B43A8D13ED11E /* Pods-StockTutorial.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -307,6 +309,7 @@
 				65DD9AFB26A6690900FD6D73 /* BaseViewController.swift in Sources */,
 				65DD9AE626A6680100FD6D73 /* StockTutorial.xcdatamodeld in Sources */,
 				65DD9B1126A6992800FD6D73 /* StockListViewModel.swift in Sources */,
+				65DD9B1326A6B73800FD6D73 /* LoadingView.swift in Sources */,
 				65DD9B0D26A68BE700FD6D73 /* Stock.swift in Sources */,
 				65DD9B0726A6751100FD6D73 /* MainCoordinator.swift in Sources */,
 				65DD9B0926A68AAF00FD6D73 /* StockRepository.swift in Sources */,
