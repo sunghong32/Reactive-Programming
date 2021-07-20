@@ -4,7 +4,18 @@
 //
 //  Created by 민성홍 on 2021/07/20.
 //
+import Combine
+import Foundation
 
 class StockRepositoryImplement: StockRepository {
-    var apiKey: String = "H7EIQM981K7PGHAQ"
+    let apiKey: String = "H7EIQM981K7PGHAQ"
+    let decoder = JSONDecoder()
+
+    func fetchStocksPublisher(keywords: String) -> AnyPublisher<StockResult, Error> {
+        let urlString = "https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=\(keywords)&apikey=\(apiKey)"
+
+        let url = URL(string: urlString)!
+
+        return URLSession.shared.dataTaskPublisher(for: url).map { $0.data }.decode(type: StockResult.self, decoder: decoder).receive(on: RunLoop.main).eraseToAnyPublisher()
+    }
 }
