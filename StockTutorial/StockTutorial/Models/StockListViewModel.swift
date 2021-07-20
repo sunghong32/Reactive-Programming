@@ -9,29 +9,30 @@ import RxSwift
 import Combine
 
 class StockListViewModel {
-    var loading: BehaviorSubject<Bool> = .init(value: false)
-    var errorMessage: BehaviorSubject<String?> = .init(value: nil)
-    var stocks: BehaviorSubject<[Stock]> = .init(value: [])
+    @Published var stocks: [Stock] = []
+    @Published var errorMessage: String?
+    @Published var loading = false
+
     var subscriber: Set<AnyCancellable> = .init()
-    
     let useCase: StockUseCase
+
+    func searchQueryChanged(query: String) {
+        loading = true
+        useCase.fetchStocksPublisher(keywords: query).sink { [unowned self] completino in
+            self.loading = false
+            switch completino {
+            case .failure(let error):
+                self.errorMessage = error.localizedDescription
+            case .finished: break
+            }
+        } receiveValue: { [unowned self] stockResult in
+            self.stocks = stockResult.items
+        }.store(in: &subscriber)
+
+    }
 
     init(useCase: StockUseCase) {
         self.useCase = useCase
     }
-
-    func viewDidLoad() {
-        loading.onNext(true)
-        useCase.fetchStocksPublisher(keywords: "AMZ").sink { completion in
-            self.loading.onNext(false)
-            switch completion {
-            case .failure(let error):
-                self.errorMessage.onNext(error.localizedDescription)
-            case .finished: break
-            }
-        } receiveValue: { stockResult in
-            self.loading.onNext(false)
-            self.stocks.onNext(stockResult.items)
-        }.store(in: &subscriber)
-    }
 }
+
