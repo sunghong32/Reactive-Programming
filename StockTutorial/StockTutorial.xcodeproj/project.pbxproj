@@ -30,6 +30,7 @@
 		65DD9B1926A6BE2F00FD6D73 /* StockList+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9B1826A6BE2F00FD6D73 /* StockList+TableView.swift */; };
 		65DD9B1C26A79DD600FD6D73 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9B1B26A79DD600FD6D73 /* EmptyView.swift */; };
 		65DD9B1E26A7A3CD00FD6D73 /* StockDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9B1D26A7A3CD00FD6D73 /* StockDetailController.swift */; };
+		65DD9B2026A7BB5300FD6D73 /* StockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9B1F26A7BB5300FD6D73 /* StockDetailView.swift */; };
 		833BABECABA735231CD5E68B /* Pods_StockTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1099E1C91B06E853C87B3DB2 /* Pods_StockTutorial.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		65DD9B1826A6BE2F00FD6D73 /* StockList+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StockList+TableView.swift"; sourceTree = "<group>"; };
 		65DD9B1B26A79DD600FD6D73 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		65DD9B1D26A7A3CD00FD6D73 /* StockDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailController.swift; sourceTree = "<group>"; };
+		65DD9B1F26A7BB5300FD6D73 /* StockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailView.swift; sourceTree = "<group>"; };
 		70B708DB434B43A8D13ED11E /* Pods-StockTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockTutorial.release.xcconfig"; path = "Target Support Files/Pods-StockTutorial/Pods-StockTutorial.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +154,7 @@
 				65DD9B1226A6B73800FD6D73 /* LoadingView.swift */,
 				65DD9B1626A6BB3100FD6D73 /* StockCell.swift */,
 				65DD9B1B26A79DD600FD6D73 /* EmptyView.swift */,
+				65DD9B1F26A7BB5300FD6D73 /* StockDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				65DD9B0926A68AAF00FD6D73 /* StockRepository.swift in Sources */,
 				65DD9B0126A66A2000FD6D73 /* StockListView.swift in Sources */,
 				65DD9B0F26A695AC00FD6D73 /* StockUseCase.swift in Sources */,
+				65DD9B2026A7BB5300FD6D73 /* StockDetailView.swift in Sources */,
 				65DD9AFF26A669C800FD6D73 /* BaseView.swift in Sources */,
 				65DD9B1526A6BA6B00FD6D73 /* Font.swift in Sources */,
 				65DD9B0B26A68AD800FD6D73 /* StockRepositoryImplement.swift in Sources */,
