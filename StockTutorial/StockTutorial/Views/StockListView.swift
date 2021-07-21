@@ -21,11 +21,20 @@ class StockListView: BaseView {
         return view
     }()
 
+    let emptyView = EmptyView()
+
     let loadingView = LoadingView()
 
     override func configureUI() {
         addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
+
+        addSubview(emptyView)
+        emptyView.translatesAutoresizingMaskIntoConstraints = false
+
+        addSubview(loadingView)
+        loadingView.translatesAutoresizingMaskIntoConstraints = false
+
         tableView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         tableView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
         tableView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
@@ -33,8 +42,11 @@ class StockListView: BaseView {
         tableView.register(StockCell.self, forCellReuseIdentifier: StockCell.identifier)
         tableView.separatorStyle = .none
 
-        addSubview(loadingView)
-        loadingView.translatesAutoresizingMaskIntoConstraints = false
+        emptyView.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        emptyView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
+        emptyView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
+        emptyView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+
         loadingView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         loadingView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
         loadingView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
