@@ -33,6 +33,7 @@
 		65DD9B2026A7BB5300FD6D73 /* StockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9B1F26A7BB5300FD6D73 /* StockDetailView.swift */; };
 		65DD9B2226A7E6A600FD6D73 /* StockDetailTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9B2126A7E6A600FD6D73 /* StockDetailTopView.swift */; };
 		65DD9B2426A7ECCE00FD6D73 /* StockDetailBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9B2326A7ECCE00FD6D73 /* StockDetailBottomView.swift */; };
+		65DD9B2626A7FD4200FD6D73 /* TimeSeriesMonthlyAdjusted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9B2526A7FD4200FD6D73 /* TimeSeriesMonthlyAdjusted.swift */; };
 		833BABECABA735231CD5E68B /* Pods_StockTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1099E1C91B06E853C87B3DB2 /* Pods_StockTutorial.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		65DD9B1F26A7BB5300FD6D73 /* StockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailView.swift; sourceTree = "<group>"; };
 		65DD9B2126A7E6A600FD6D73 /* StockDetailTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailTopView.swift; sourceTree = "<group>"; };
 		65DD9B2326A7ECCE00FD6D73 /* StockDetailBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailBottomView.swift; sourceTree = "<group>"; };
+		65DD9B2526A7FD4200FD6D73 /* TimeSeriesMonthlyAdjusted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSeriesMonthlyAdjusted.swift; sourceTree = "<group>"; };
 		70B708DB434B43A8D13ED11E /* Pods-StockTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockTutorial.release.xcconfig"; path = "Target Support Files/Pods-StockTutorial/Pods-StockTutorial.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				65DD9B0C26A68BE700FD6D73 /* Stock.swift */,
+				65DD9B2526A7FD4200FD6D73 /* TimeSeriesMonthlyAdjusted.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				65DD9B1E26A7A3CD00FD6D73 /* StockDetailController.swift in Sources */,
 				65DD9ADC26A6680100FD6D73 /* AppDelegate.swift in Sources */,
 				65DD9AFB26A6690900FD6D73 /* BaseViewController.swift in Sources */,
+				65DD9B2626A7FD4200FD6D73 /* TimeSeriesMonthlyAdjusted.swift in Sources */,
 				65DD9AE626A6680100FD6D73 /* StockTutorial.xcdatamodeld in Sources */,
 				65DD9B1126A6992800FD6D73 /* StockListViewModel.swift in Sources */,
 				65DD9B1326A6B73800FD6D73 /* LoadingView.swift in Sources */,
