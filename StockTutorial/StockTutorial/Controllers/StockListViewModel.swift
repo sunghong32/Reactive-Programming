@@ -8,15 +8,13 @@ import RxCocoa
 import RxSwift
 import Combine
 
-class StockListViewModel {
+class StockListViewModel: BaseViewModel {
     @Published var stocks: [Stock] = []
     @Published var errorMessage: String?
     @Published var loading = false
     @Published var isEmpty = false
     var currentStocks: [Stock] = []
 
-
-    var subscriber: Set<AnyCancellable> = .init()
     let useCase: StockUseCase
 
     func searchQueryChanged(query: String) {
@@ -37,6 +35,7 @@ class StockListViewModel {
 
     init(useCase: StockUseCase) {
         self.useCase = useCase
+        super.init()
         reduce()
     }
 
