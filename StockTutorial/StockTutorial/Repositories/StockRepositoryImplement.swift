@@ -9,7 +9,8 @@ import Foundation
 
 class StockRepositoryImplement: StockRepository {
 
-    let apiKey: String = "H7EIQM981K7PGHAQ"
+    let apiKey: String = "BIGEIVLKEANNRKP7"
+    //7OEFMBS6NJOIHK1G
     let decoder = JSONDecoder()
 
     func fetchStocksPublisher(keywords: String) -> AnyPublisher<StockResult, Error> {

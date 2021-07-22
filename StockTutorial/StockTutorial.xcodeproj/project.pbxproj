@@ -38,6 +38,7 @@
 		65DD9B2B26A8EF6200FD6D73 /* Error+ErrorDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9B2A26A8EF6200FD6D73 /* Error+ErrorDescription.swift */; };
 		65DD9B2D26A8F1BD00FD6D73 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9B2C26A8F1BD00FD6D73 /* BaseViewModel.swift */; };
 		65DD9B2F26A8F43F00FD6D73 /* StockDetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9B2E26A8F43F00FD6D73 /* StockDetailUseCase.swift */; };
+		65DD9B3126A947EE00FD6D73 /* MonthInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9B3026A947EE00FD6D73 /* MonthInfo.swift */; };
 		833BABECABA735231CD5E68B /* Pods_StockTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1099E1C91B06E853C87B3DB2 /* Pods_StockTutorial.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 		65DD9B2A26A8EF6200FD6D73 /* Error+ErrorDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+ErrorDescription.swift"; sourceTree = "<group>"; };
 		65DD9B2C26A8F1BD00FD6D73 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		65DD9B2E26A8F43F00FD6D73 /* StockDetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailUseCase.swift; sourceTree = "<group>"; };
+		65DD9B3026A947EE00FD6D73 /* MonthInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthInfo.swift; sourceTree = "<group>"; };
 		70B708DB434B43A8D13ED11E /* Pods-StockTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockTutorial.release.xcconfig"; path = "Target Support Files/Pods-StockTutorial/Pods-StockTutorial.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,6 +193,7 @@
 			children = (
 				65DD9B0C26A68BE700FD6D73 /* Stock.swift */,
 				65DD9B2526A7FD4200FD6D73 /* TimeSeriesMonthlyAdjusted.swift */,
+				65DD9B3026A947EE00FD6D73 /* MonthInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				65DD9B1526A6BA6B00FD6D73 /* Font.swift in Sources */,
 				65DD9B2B26A8EF6200FD6D73 /* Error+ErrorDescription.swift in Sources */,
 				65DD9B0B26A68AD800FD6D73 /* StockRepositoryImplement.swift in Sources */,
+				65DD9B3126A947EE00FD6D73 /* MonthInfo.swift in Sources */,
 				65DD9B1726A6BB3100FD6D73 /* StockCell.swift in Sources */,
 				65DD9B2F26A8F43F00FD6D73 /* StockDetailUseCase.swift in Sources */,
 				65DD9B1926A6BE2F00FD6D73 /* StockList+TableView.swift in Sources */,
